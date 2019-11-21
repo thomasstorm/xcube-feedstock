@@ -52,7 +52,7 @@ requirements:
 test:
   imports:
     - xcube
-    - xcube.api
+    - xcube.core
     - xcube.cli
     - xcube.util
     - xcube.webapi

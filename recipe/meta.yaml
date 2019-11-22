@@ -52,6 +52,7 @@ requirements:
 test:
   imports:
     - xcube
+    - xcube.cli.main
   commands:
     - xcube --help
 

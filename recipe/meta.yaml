@@ -13,9 +13,8 @@ build:
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
   entry_points:
-    - xcube = xcube.cli.cli:main
-    - xcube-gen = xcube.cli.gen:main
-    - xcube-restime = xcube.cli.restime:main
+    - xcube = xcube.cli.main:main
+    - xcube_standard = xcube.plugin:init_plugin
 
 requirements:
   host:

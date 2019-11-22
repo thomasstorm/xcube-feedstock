@@ -52,10 +52,6 @@ requirements:
 test:
   imports:
     - xcube
-    - xcube.core
-    - xcube.cli
-    - xcube.util
-    - xcube.webapi
   commands:
     - xcube --help
 

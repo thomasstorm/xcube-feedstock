@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: xcube
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube/archive/v{{ version }}.tar.gz
-  sha256: 0f2842ffc310d800a55af27967ed99f9f281faebdc18539e27409582b4f7f272
+  sha256: b5c88e8cdcbf91ce27181573fcf023122fe7228d841b48dd05faf9d97a3051d6
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - xcube = xcube.cli.main:main
     - xcube_standard = xcube.plugin:init_plugin
@@ -56,13 +56,13 @@ test:
     - xcube --help
 
 about:
-  summary: "xcube is a Python package for generating and exploiting data cubes powered by xarray, dask, and zarr"
+  summary: xcube is a Python package for generating and exploiting data cubes powered by xarray, dask, and zarr
   home: https://github.com/dcs4cop/xcube
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  description: "xcube is a Python package for generating and exploiting data cubes powered by xarray, dask, and zarr. It
-  has been designed in the context of Earth Observation data."
+  description: xcube is a Python package for generating and exploiting data cubes powered by xarray, dask, and zarr. It has been designed in the context of Earth
+    Observation data.
   doc_url: https://xcube.readthedocs.io
   dev_url: https://github.com/dcs4cop/xcube
 

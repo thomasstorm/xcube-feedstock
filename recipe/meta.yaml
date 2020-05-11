@@ -9,7 +9,7 @@ source:
   sha256: 494159096d150c5dcee68e56fadd3afdef25dba8d7086dbec15b78b09ae8b730
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -25,7 +25,6 @@ requirements:
     - python >=3.6
     # Required
     - affine >=2.2
-    - blas =*=mkl
     - click >=7.0
     - cmocean >=2.0
     - dask >=1.2

@@ -49,7 +49,6 @@ requirements:
     - scipy >=1.2
     - setuptools >=41.0
     - shapely >=1.6
-    - sphinx >=2.0.1
     - tornado >=6.0
     - xarray >=0.14.1
     - zarr >=2.3.2

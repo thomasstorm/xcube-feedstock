@@ -1,4 +1,4 @@
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: xcube
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube/archive/v{{ version }}.tar.gz
-  sha256: ee7358738bede5849ffaa3e580b766fbfd94f9356b390597d40a0d45915baf2d
+  sha256: 00000000  # to be filled in once the github release has been made
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:

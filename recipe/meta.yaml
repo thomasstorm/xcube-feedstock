@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: xcube
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube/archive/v{{ version }}.tar.gz
-  sha256: 876bc668b3820fbf6cfab2ed5dbc49888a747d7e4bd32d35cdf7714f232a64c7
+  sha256: 755168fedfc17bb6e77ba4a106cd249e6aaa52a84eb9cac32c15f59c4d6c024c
 
 build:
   number: 0
@@ -25,7 +25,6 @@ requirements:
     - python >=3.6
     # Required
     - affine >=2.2
-    - blas =*.*=mkl
     - click >=7.0
     - cmocean >=2.0
     - dask >=1.2
@@ -43,14 +42,14 @@ requirements:
     - pyjwt >=1.7
     - pyyaml >=5.1
     - rasterio >=1.0
-    - s3fs <0.5
+    - s3fs >=0.5.1
     - scipy >=1.2
     - setuptools >=41.0
     - shapely >=1.6
     - strict-rfc3339 >=0.7
     - tornado >=6.0
     - xarray >=0.16.1
-    - zarr >=2.4
+    - zarr >=2.6.1
 test:
   imports:
     - xcube

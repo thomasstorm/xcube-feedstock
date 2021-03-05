@@ -14,7 +14,6 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - xcube = xcube.cli.main:main
-    - xcube_plugins = xcube.plugin:init_plugin
 
 requirements:
   host:

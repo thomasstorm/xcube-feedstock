@@ -43,12 +43,14 @@ requirements:
     - pyyaml >=5.1
     - pyproj >=3.0
     - rasterio >=1.0
+    - requests >= 2.25.1
     - s3fs >=0.5.1
     - scipy >=1.2
     - setuptools >=41.0
     - shapely >=1.6
     - strict-rfc3339 >=0.7
     - tornado >=6.0
+    - urllib3 >= 1.26.3
     - xarray >=0.16.1
     - zarr >=2.6.1
 test:

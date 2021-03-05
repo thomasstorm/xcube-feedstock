@@ -1,4 +1,4 @@
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: xcube
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube/archive/v{{ version }}.tar.gz
-  sha256: 755168fedfc17bb6e77ba4a106cd249e6aaa52a84eb9cac32c15f59c4d6c024c
+  sha256: d04f9cc1ffeef5929197b5f33ef7eceb031382370ba8091ff1cbc94393ec3816
 
 build:
   number: 0
@@ -14,7 +14,6 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - xcube = xcube.cli.main:main
-    - xcube_standard = xcube.plugin:init_plugin
 
 requirements:
   host:
@@ -29,7 +28,7 @@ requirements:
     - cmocean >=2.0
     - dask >=1.2
     - fiona >=1.8
-    - gdal >=3.0,<3.1
+    - gdal >=3.0
     - geopandas >=0.8
     - jdcal >=1.4.1
     - jsonschema >=3.2.0
@@ -41,13 +40,16 @@ requirements:
     - pillow >=6.0
     - pyjwt >=1.7
     - pyyaml >=5.1
+    - pyproj >=3.0
     - rasterio >=1.0
+    - requests >=2.25.1
     - s3fs >=0.5.1
     - scipy >=1.2
     - setuptools >=41.0
     - shapely >=1.6
     - strict-rfc3339 >=0.7
     - tornado >=6.0
+    - urllib3 >=1.26.3
     - xarray >=0.16.1
     - zarr >=2.6.1
 test:

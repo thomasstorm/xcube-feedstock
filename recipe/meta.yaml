@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: xcube
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube/archive/v{{ version }}.tar.gz
-  sha256: d04f9cc1ffeef5929197b5f33ef7eceb031382370ba8091ff1cbc94393ec3816
+  sha256: bfc44320a4e45e2d8e606dbadfd6e930528a304d16ff5af6235de1647f5bfd30
 
 build:
   number: 0
@@ -71,7 +71,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - AliceBalfanz    
+    - AliceBalfanz
     - dzelge
     - forman
     - pont-us

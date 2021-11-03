@@ -11,7 +11,9 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script:
+    - {{ PYTHON }} -m pip install rfc3339-validator==0.1.4 --no-deps
+    - {{ PYTHON }} -m pip install . -vv
   entry_points:
     - xcube = xcube.cli.main:main
 

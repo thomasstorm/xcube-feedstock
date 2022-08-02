@@ -1,4 +1,4 @@
-{% set version = "0.11.2" %}
+{% set version = "0.12.0" %}
 
 package:
   name: xcube
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube/archive/v{{ version }}.tar.gz
-  sha256: ed0944f9e91eb4c0e519fc7bbc88508be1f74acdd2b026868db28acc79e40b44
+  sha256: 35af3d7cec67ce267900b0f88de63d9a9b18811101402edbe674ac4bb18c6d6b
 
 build:
   number: 0
@@ -31,34 +31,36 @@ requirements:
     - deprecated >=1.2
     - distributed >=2021.6
     - fiona >=1.8
-    - fontconfig <2.13.96
+    - fontconfig
     - fsspec >=2021.6
     - gdal >=3.0
     - geopandas >=0.8
-    - jdcal >=1.4.1
-    - jsonschema >=3.2.0
+    - jdcal >=1.4
+    - jsonschema >=3.2
     - lz4
     - matplotlib-base >=3.0
-    - netcdf4 >=1.5.0
+    - netcdf4 >=1.5
     - numba >=0.52
     - numpy >=1.16
-    - openssl <3.0.0
+    - openssl
     - pandas >=1.3
     - pillow >=6.0
     - pyjwt >=1.7
-    - pyproj >=3.0,<3.3
+    - pyproj >=3.0
     - python-blosc
     - pyyaml >=5.4
     - rasterio >=1.2
     - requests >=2.25
     - requests-oauthlib >=1.3
-    - rfc3339-validator >=0.1.4
+    - rfc3339-validator >=0.1
+    - rioxarray >=0.11
     - s3fs >=2021.6
     - scipy >=1.6.0
     - setuptools >=41.0
     - shapely >=1.6
     - tornado >=6.0
     - urllib3 >=1.26
+    - werkzeug <2.2
     - xarray >=0.19
     - zarr >=2.8
 test:

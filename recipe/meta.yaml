@@ -1,4 +1,4 @@
-{% set version = "0.12.0" %}
+{% set version = "0.12.1" %}
 
 package:
   name: xcube
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube/archive/v{{ version }}.tar.gz
-  sha256: 35af3d7cec67ce267900b0f88de63d9a9b18811101402edbe674ac4bb18c6d6b
+  sha256: f97b13249f18c0cda302edfb3cd76ef48bd4b6ea083753be29df6cae415aaac1
 
 build:
   number: 0
@@ -61,8 +61,8 @@ requirements:
     - tornado >=6.0
     - urllib3 >=1.26
     - werkzeug <2.2
-    - xarray >=0.19
-    - zarr >=2.8
+    - xarray >=2022.6
+    - zarr >=2.11
 test:
   imports:
     - xcube

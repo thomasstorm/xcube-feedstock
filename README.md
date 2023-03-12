@@ -1,11 +1,11 @@
-About xcube
-===========
+About xcube-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xcube-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/dcs4cop/xcube
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xcube-feedstock/blob/main/LICENSE.txt)
 
 Summary: xcube is a Python package for generating and exploiting data cubes powered by xarray, dask, and zarr
 

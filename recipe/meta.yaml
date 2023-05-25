@@ -9,7 +9,7 @@ source:
   sha256: ef780c96767a4b72a5643e3cb36fa4ea72bb5eca1b0acb276bd0de7296ac9936
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv
@@ -34,7 +34,7 @@ requirements:
     - fiona >=1.8
     - fontconfig
     - fsspec >=2021.6
-    - gdal >=3.0
+    - gdal >=3.0,<3.6.3
     - geopandas >=0.8
     - jdcal >=1.4
     - jsonschema >=3.2

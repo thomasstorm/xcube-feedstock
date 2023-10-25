@@ -34,7 +34,7 @@ requirements:
     - fiona >=1.8
     - fontconfig
     - fsspec >=2021.6
-    - gdal >=3.0,<3.6.3
+    - gdal >=3.0
     - geopandas >=0.8
     - jdcal >=1.4
     - jsonschema >=3.2
@@ -63,7 +63,7 @@ requirements:
     - tornado >=6.0
     - urllib3 >=1.26
     - werkzeug <2.2
-    - xarray >=2022.6
+    - xarray >=2022.6,<2023.09.0
     - zarr >=2.11
 test:
   imports:
@@ -90,3 +90,4 @@ extra:
     - pont-us
     - thomasstorm
     - TonioF
+    - ruchimotwaniBC

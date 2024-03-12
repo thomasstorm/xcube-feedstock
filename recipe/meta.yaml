@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: xcube
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube/archive/v{{ version }}.tar.gz
-  sha256: 55c9e471acd129d34da0e2678e95a1b5075b91ba982028b73916ec1bb7ca1118
+  sha256: 2e739056eb62bf30e33cfeb51d2cda09036af5c145335353f15b0e6b030e9cdc
 
 build:
   number: 0
@@ -45,7 +45,7 @@ requirements:
     - numba >=0.52
     - numpy >=1.16
     - openssl
-    - pandas >=1.3,<2
+    - pandas >=1.3
     - pillow >=6.0
     - pyjwt >=1.7
     - pyproj >=3.0
@@ -62,8 +62,8 @@ requirements:
     - shapely >=1.6
     - tornado >=6.0
     - urllib3 >=1.26
-    - werkzeug <2.2
-    - xarray >=2022.6,<2023.09.0
+    - werkzeug
+    - xarray >=2022.6
     - zarr >=2.11
 test:
   imports:

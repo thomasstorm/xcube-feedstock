@@ -153,6 +153,7 @@ Feedstock Maintainers
 * [@TejasMorbagal](https://github.com/TejasMorbagal/)
 * [@TonioF](https://github.com/TonioF/)
 * [@forman](https://github.com/forman/)
+* [@konstntokas](https://github.com/konstntokas/)
 * [@pont-us](https://github.com/pont-us/)
 * [@ruchimotwaniBC](https://github.com/ruchimotwaniBC/)
 * [@thomasstorm](https://github.com/thomasstorm/)

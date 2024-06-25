@@ -1,4 +1,4 @@
-{% set version = "1.5.1" %}
+{% set version = "1.6.0" %}
 
 package:
   name: xcube
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/dcs4cop/xcube/archive/v{{ version }}.tar.gz
-  sha256: 8069b46feb684ccec7661000d9fbbc7b9d0d569e5758d7c932d4ea5ec8227fb5
+  sha256: ec48deaddeb2c7aa55857c57d0b2b8b8d8d5a5a726bbccc35ab53e8db57e3b99
 
 build:
   number: 0
@@ -39,12 +39,11 @@ requirements:
     - jdcal >=1.4
     - jsonschema >=3.2
     - mashumaro
-    - matplotlib-base >=3.0
+    - matplotlib-base >=3.8.3
     - netcdf4 >=1.5
     - numba >=0.52
     - numcodecs >=0.12.1
     - numpy >=1.16
-    - openssl
     - pandas >=1.3
     - pillow >=6.0
     - pyjwt >=1.7

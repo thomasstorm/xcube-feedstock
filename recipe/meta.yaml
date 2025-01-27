@@ -1,5 +1,5 @@
-{% set python_min = '3.10' %}
-{% set version = "1.7.1" %}
+{% set python_min = "3.10" %}
+{% set version = "1.8.1" %}
 
 package:
   name: xcube
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/xcube-dev/xcube/archive/v{{ version }}.tar.gz
-  sha256: 71fd9ea283da9960e4cb99af811247d64218301030e0826b4b03050fa224d273
+  sha256: 71cf360335d09db032d059a3ddc7152ba05490f15817ca512f21610152d172db
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script:
     - {{ PYTHON }} -m pip install . -vv
